@@ -27,7 +27,8 @@
 
 .nav-1-container ul > li {
   display: inline-block;
-  margin-left: 25px;
+  margin: 15px 0 15px 25px;
+
 }
 
 .navigation-2 {
@@ -45,8 +46,10 @@
 
 .nav-2-container ul > li {
   display: inline-block;
-  margin-right: 30px;
-  padding: 1px;
+  padding: 0 15px;
+  line-height: 2em;
+  font-weight: 600;
+  opacity: 0.8;
 }
 
 #subscribe {
@@ -75,13 +78,9 @@
 
 #content {
   width: 86%;
-  margin: auto;
+  margin: 20px auto;
 }
 
-.body-content {
-  /*border: 1px solid black;*/
-  left: 100px;
-}
 
 .article-title {
   margin-bottom: 20px;
@@ -114,28 +113,39 @@
   height: 80%;*/
  }  
 
+#sidebar {
+  padding-right: 0;
+}
+
  #rating {
   background-color: #f2f2f2;
   width: 100%;
-  height: 420px;
+  /*height: 420px;*/
   position: relative;
+  margin-top: 70px;
+  padding-bottom: 10px;
+  
  }
 
 #rating .head {
   color: #5f5f5f;
   font-weight: 700;
   position: relative;
-  top: 145px;
-  left: 60px;
+  top: -32px;
+  /*left: 60px;*/
   font-size: 1.2em;
   text-align: center;
-  display: inline-block;
+  /*display: inline-block;*/
+}
+
+#rating img {
+  display: inline;
 }
 
 .rating-rate {
   font-size: 6em;
   position: relative;
-  top: 150px;
+  /*top: 150px;*/
   text-align:center ;
   color: #cdcdcd;
 }
@@ -144,8 +154,13 @@
   color: #0070be;
 }
 
+#shadow-container {
+  background-image: url(jumbo.jpg);
+  min-height: 390px;
+}
+
  #shadow-container > img {
-  position: absolute;
+  height: 100%;
  }
 
  #shadow-container > div {
@@ -178,9 +193,9 @@
 
 #etc {
   width: 86%;
-  margin: auto;
-  position: relative;
-  top: 170px;
+  margin:  30px auto;
+  /*position: relative;*/
+  /*top: 170px;*/
 }
 
  #etc-box {
@@ -195,8 +210,6 @@
 
  #footer {
   background-color: #e7e6e1;
-  position: relative;
-  top: 180px;
   margin-top: 20px;
  }
 
@@ -218,3 +231,36 @@
  .social > ul > li {
   display: inline-block;
  }
+
+.blue-nav {
+  /*border: 1px solid blue;*/
+  width: 86%;
+  /*min-height: 235px;*/
+  background-image: url(blue-nav.jpg);
+  margin: auto;
+  position: relative; 
+  top: -150px;
+}
+
+.blue-nav-container {
+  position: relative;
+  /*z-index: 10;*/
+  /*background-color:#003667;*/
+}
+
+.blue-jag {
+ background-color:#003667;
+ height: 235px; 
+}
+
+.blue-nav-container h3 {
+  color: white;
+} 
+
+.blue-nav-inner-wrapper {
+  line-height: 235px;
+}
+
+.blue-nav-inner-wrapper > h3 {
+  line-height: 1em;
+}
