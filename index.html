@@ -2,7 +2,6 @@
 <html>
 <head>
     <title>Atlantis</title>
-    
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="dist/css/bootstrap.min.css">
@@ -25,7 +24,7 @@
     </div>
       <div class='navigation-2'>
         <div class='nav-2-container'>
-          <ul>
+          <ul id='tooltippers'>
             <li>HOME</li>
             <li>ABOUT</li>
             <li>HOSPITAL SHADOWING</li>
@@ -36,151 +35,194 @@
           </ul>
         </div>
       </div>
-    <div class='row'>
-      <div class='img-container'>
-        <img src="header-img.jpg" class="img-responsive">
-      </div>
-      <div class='blue-nav'>
-        <div class='blue-nav-container'>
-          <div class='col-md-3 blue-jag' id='blue1'>
-            <div class='blue-nav-inner-wrapper'>  
-              <h3>Health Students</h3>
-            </div>
-          </div>
-          <div class='col-md-3 blue-jag' id='blue2'>
-            <h3>Language Studies Student</h3>
-          </div>
-          <div class='col-md-3 blue-jag' id='blue3'>
-            <h3>Advisors & Faculty</h3>
-          </div>
-          <div class='col-md-3 blue-jag' id='blue4'>
-            <h3>Parents</h3>
-          </div>
-        </div>  
-    </div>
-    <div class='row' id='subscribe'>
-      <div class='subscribe-newsletter'>
-        <div class="join-news col-md-3">
-          <p><i class="fa fa-envelope-o"></i>JOIN OUR NEWSLETTER</p>
-        </div>
-        <div class="col-md-6">
-          <div class='form'>
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-          </div>
-        </div>
-        <div class="col-md-3">
-          <p>SUBMIT</p>
-        </div>   
-      </div>
-      </div>
-    <div class='row' id='content'>
-        <div class='col-md-8'>
-          <div class='body-content'>
-            <div class='article-title'>
-              <h3>What is the Atlantis Project?</h3>
-            </div>
-            <div class='article-text'>
+      <div class='tooltips'>
+        <div class='tooltip-info' id='about'>
+          <div class='about-left'>
+            <div class='about-left-wrapper'>
+              <img src="atlantis-bw.jpg" alt="">
               <p>We offer internships in public hospitals in Europe. You will have the opportunity to shadow doctors and learn about different medical specialties, see the European healthcare system from the inside, improve language skills, and contribute to the islands by teaching English to locals or volunteering in the community.</p>
             </div>
-            <div class='article-title'>
-              <h3>Who Can Apply?</h3>
-            </div>
-            <div class='article-text'>
-              <p>Our programs are open to pre-health or pre-med undergraduates, and anyone interested in exploring health related professions.</p>
-            </div>
-            <div class='article-title'>
-              <h3>When?</h3>
-            </div>
-            <div class='article-text'>
-              <p>Our programs are open to pre-health or pre-med undergraduates, and anyone interested in exploring health related professions.</p>
-            </div>
-            <div class='article-title'>
-              <h3>Where?</h3>
-            </div>
-            <div class='article-text'>
-              <p>Our programs are open to pre-health or pre-med undergraduates, and anyone interested in exploring health related professions.</p>
-            </div>
-            <div class='article-title'>
-              <h3>Why?</h3>
-            </div>
-            <div class='article-text'>
+          </div>
+          <div class='about-right'>
+            <div class='about-right-wrapper'>
               <ul>
-                <li>Gain an international perspective on healthcare</li>
-                <li>Discern whether a health career is right for you</li>
-                <li>Fine-tune your career interests</li>
-                <li>Explore some of the most beautiful islands in the world!</li>
+                <li>HISTORY</li>
+                <li>ETHICS</li>
+                <li>OUR TEAM</li>
+                <li>ALUMNI AMBASSADORS</li>
+                <li>PARTNERS</li>
               </ul>
             </div>
           </div>
         </div>
-        <div class='col-md-4' id='sidebar'>
-            <div class='contact-box'>
-              <div class='contact-box-content'>
-                <h5>CONTACT US</h5>
-                <P>admissions@atlantis-project.org</P>
-                <P>(336) 355-0862</P>
-                <div class='apply-for'>
-                  <div class='apply-for-content'>
-                    <h3>APPLY HERE FOR OUR INTERNSHIP PROGRAM</h3>
+      </div>
+    <div class='row'>
+      <div class='img-container'>
+        <img src="header-img.jpg" class="img-responsive">
+      </div>
+    </div>
+      <div class='row' id='bloo'>    
+        <div class='blue-nav'>  
+          <div class='img-wrap'>  
+            <img src="blue-nav.jpg" class="img img-responsive" alt="">
+          </div>
+          <div class='blue-nav-container'>
+            <div class='col-md-3 blue-jag' id='blue1'>
+                <p class='blue-heading'>Health Students</p>
+            </div>
+            <div class='col-md-3 blue-jag' id='blue2'>
+              <p class='blue-heading'>Language Studies Student</p>
+            </div>
+            <div class='col-md-3 blue-jag' id='blue3'>
+              <p class='blue-heading'>Advisors & Faculty</p>
+            </div>
+            <div class='col-md-3 blue-jag' id='blue4'>
+              <p class='blue-heading'>Parents</p>
+            </div>
+          </div>
+        </div>    
+      </div>
+      <div class="row">
+        <div class="subscribe-form">
+          <form class="form-inline col">
+            <div class="form-group">
+              <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+              <div class="input-group"> 
+                    <div class="input-group-addon"><i class="fa fa-envelope-o"></i>Join Our Newsletter</div>
+                    <input type="text" class="form-control" id="exampleInputAmount" placeholder="Enter Email Address:">
+                    <button type="submit" class="btn btn-primary">Transfer cash</button>
+              </div>
+            </div> 
+          </form>
+        </div>
+      </div>
+      <div class='row' id='content'>
+          <div class='col-md-8'>
+            <div class='body-content'>
+              <div class='article-title'>
+                <h3>What is the Atlantis Project?</h3>
+              </div>
+              <div class='article-text'>
+                <p>We offer internships in public hospitals in Europe. You will have the opportunity to shadow doctors and learn about different medical specialties, see the European healthcare system from the inside, improve language skills, and contribute to the islands by teaching English to locals or volunteering in the community.</p>
+              </div>
+              <div class='article-title'>
+                <h3>Who Can Apply?</h3>
+              </div>
+              <div class='article-text'>
+                <p>Our programs are open to pre-health or pre-med undergraduates, and anyone interested in exploring health related professions.</p>
+              </div>
+              <div class='article-title'>
+                <h3>When?</h3>
+              </div>
+              <div class='article-text'>
+                <p>Our programs are open to pre-health or pre-med undergraduates, and anyone interested in exploring health related professions.</p>
+              </div>
+
+              <div class='row' id='where'>
+                <div class='col-md-3'>
+                  <img src="nextto-where.jpg" class='img img-responsive' alt="">
+                </div>
+                <div class='col-md-9'>
+                  <div class='article-title'>
+                    <h3>Where?</h3>
+                  </div>
+                  <div class='article-text'>
+                    <p>Our programs are open to pre-health or pre-med undergraduates, and anyone interested in exploring health related professions.</p>
+                  </div>
+                </div>  
+              </div>
+              <div class='article-title'>
+                <h3>Why?</h3>
+              </div>
+              <div class='article-text'>
+                <ul>
+                  <li>Gain an international perspective on healthcare</li>
+                  <li>Discern whether a health career is right for you</li>
+                  <li>Fine-tune your career interests</li>
+                  <li>Explore some of the most beautiful islands in the world!</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class='col-md-4' id='sidebar'>
+              <div class='contact-box'>
+                <div class='contact-box-content'>
+                  <h5>CONTACT US</h5>
+                  <div class="p-box">
+                    <P>admissions@atlantis-project.org</P>
+                    <P>(336) 355-0862</P>
+                  </div>
+              </div>
+                  <div class='apply-for'>
+                    <div class='apply-for-content'>
+                      <h3>APPLY HERE FOR OUR INTERNSHIP PROGRAM</h3>
+                    </div>
                   </div>
                 </div>
+              <div class='container' id='rating'>
+                <div class='head'>
+                  <img src="goabroad.png" class='img-responsive' id='rating-img'>
+                  <h2 class='atlantis'>Atlantis Project</h2>
+                  <p class='rating-rate'><span class='blue'>9.5</span>/10</p>
+                  <p class='rating-rate-p'>RATING</p>
+                </div>
               </div>
-            </div>
-            <div class='container' id='rating'>
-              <div class='head'>
-                <img src="goabroad.png" class='img-responsive' id='rating-img'>
-                <p>ATLANTIS PROJECT</p>
-                <p class='rating-rate'><span class='blue'>9.5</span>/10</p>
-              </div>
-            </div>
-        </div>
-    </div>
-    <div class='container-fluid' id='shadow-container'>
-      <div class='jumbo-content'>
-        <p>We want to ensure that all pre-health, pre-med, nursing, and other students in health related fields have the best hospital shadowing internship possible. If you have any questions, please contact us. Before applying be sure you have reviewed our website carefully to understand the scope of our programs, and looked over our our FAQ page.</p>
-        <div class='jumbo-cta'>
-          <button id='apply-sp'><strong>APPLY NOW TO OUR HOSPITAL SHADOWING PROGRAM</strong></button>
-        </div>
-      </div>
-    </div>
-    <div class='container-fluid'>
-      <div class='row' id='etc'>
-        <div class='col-md-6'>
-          <div class='etc-box'>
-            <h3>Our Partners</h3>
           </div>
-          <div class='row'>
-            <div class='col-md-6'>
-              <img src="partner-1.jpg">
-            </div>
-            <div class='col-md-6'>
-              <img src="partner-2.jpg">
-            </div>
+      </div>
+      <div class='container-fluid' id='shadow-container'>
+        <div class='jumbo-content'>
+          <p>We want to ensure that all pre-health, pre-med, nursing, and other students in health related fields have the best hospital shadowing internship possible. If you have any questions, please contact us. Before applying be sure you have reviewed our website carefully to understand the scope of our programs, and looked over our our FAQ page.</p>
+          <div class='jumbo-cta'>
+            <button id='apply-sp'><strong>APPLY NOW TO OUR HOSPITAL SHADOWING PROGRAM</strong></button>
           </div>
         </div>
-        <div class='col-md-6'>
-          <h3>Our Twitter Page</h3> 
-          <div class='tweet-content'>
-            <img src="twitter-bird.png">
-            <p>Check out 'Convocation - Event and Conference Landing Page' on #EnvatoMarket by @imithemes #themeforest http://t.co/XBCzJxEy4x Dec. 3, 2014</p>
-          </div> 
+      </div>
+      <div class='container-fluid'>
+        <div class='row' id='etc'>
+          <div class='col-md-6'>
+              <h3 class="etc">Our Partners</h3>
+            <div class='row'>
+              <div class='col-md-6'>
+                <img src="partner-1.jpg">
+              </div>
+              <div class='col-md-6'>
+                <img src="partner-2.jpg">
+              </div>
+            </div>
+          </div>
+          <div class='col-md-6'>
+            <h3 class='etc'>Our Twitter Page</h3> 
+            <div class='tweet-content'>
+              <img src="twitter-bird.png">
+              <p>Check out 'Convocation - Event and Conference Landing Page' on #EnvatoMarket by @imithemes #themeforest http://t.co/XBCzJxEy4x Dec. 3, 2014</p>
+            </div> 
+          </div>
         </div>
       </div>
-    </div>
-    <div class='container-fluid' id='footer'>
-      <div class='footer-content'>
-        <p>Copyright 2014 Atlantis Project | All Rights Reserved</p>
+      <div class="row">
+        <div class='container-fluid' id='footer'>
+          <div class='footer-content'>
+            <div class='col-md-4'>
+              <p>Copyright 2014 Atlantis Project | All Rights Reserved</p>
+            </div>
+            <div class='col-md-4'></div>
+            <div class="col-md-4">
+              <div class='social'>
+                <ul class='social-icons'>
+                  <li class='social-list'><i class="fa fa-facebook"></i></li>
+                  <li><i class="fa fa-twitter"></i></li>
+                  <li><i class="fa fa-pinterest"></i></li>
+                  <li><i class="fa fa-google-plus"></i></li>
+                  <li><i class="fa fa-youtube"></i></li>
+                  <li><i class="fa fa-rss"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class='social'>
-        <ul>
-          <li><i class="fa fa-facebook-square fa-2x"></i></li>
-          <li><i class="fa fa-facebook-square fa-2x"></i></li>
-          <li><i class="fa fa-facebook-square fa-2x"></i></li>
-          <li><i class="fa fa-facebook-square fa-2x"></i></li>
-        </ul>
-      </div>
-    </div>
-  </div>
+  </div>  
   <script type="text/javascript" src="dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="custom.js"></script>
 </body>
 </html>
