@@ -10,16 +10,21 @@
 <body>
   <div class='container-fluid' id='main'>
     <div class='row' id='header'>
-      <div class='navigation-1'>
-        <img src="atlantis-logo.png" class='img img-responsive'>
-        <div class="nav-1-container">
-          <ul id='nav-1'>
-            <li>LOG IN</li>
-            <li>FAQ</li>
-            <li>WEBINARS</li>
-            <li>CONTACT</li>
-          </ul>
+      <div class='container-fluid'>
+        <div class='col-md-3'>
+          <img src="atlantis-logo.png" class='img img-responsive'>
         </div>
+        <div class='col-md-5'></div>
+        <div class='col-md-4'>  
+          <div class="nav-1-container">
+            <ul id='nav-1'>
+              <li>LOG IN</li>
+              <li>FAQ</li>
+              <li>WEBINARS</li>
+              <li>CONTACT</li>
+            </ul>
+          </div>
+        </div>  
       </div>
     </div>
       <div class='navigation-2'>
@@ -84,15 +89,18 @@
       </div>
       <div class="row">
         <div class="subscribe-form">
-          <form class="form-inline col">
+          <form class="form-inline text-center">
             <div class="form-group">
-              <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
-              <div class="input-group"> 
-                    <div class="input-group-addon"><i class="fa fa-envelope-o"></i>Join Our Newsletter</div>
-                    <input type="text" class="form-control" id="exampleInputAmount" placeholder="Enter Email Address:">
-                    <button type="submit" class="btn btn-primary">Transfer cash</button>
+              <label class="sr-only" for="newsletter_email">Email</label>
+              <div class="input-group">
+                <div class="input-group-addon">
+                  <i class="fa fa-envelope-o"></i> &nbsp;Join Our Newsletter
+                </div>
+                <input type="text" class="form-control" id="newsletter_email" placeholder="Email">
+                <!-- <div class="input-group-addon">.00</div> -->
               </div>
-            </div> 
+            </div>
+            <button type="submit" class="btn btn-primary">Join</button>
           </form>
         </div>
       </div>
@@ -152,13 +160,15 @@
                     <P>admissions@atlantis-project.org</P>
                     <P>(336) 355-0862</P>
                   </div>
-              </div>
+                </div>
                   <div class='apply-for'>
                     <div class='apply-for-content'>
-                      <h3>APPLY HERE FOR OUR INTERNSHIP PROGRAM</h3>
+                      <div class='apply-wrapper'>  
+                        <h4>APPLY HERE FOR OUR INTERNSHIP PROGRAM</h4>
+                      </div>
                     </div>
                   </div>
-                </div>
+              </div>
               <div class='container' id='rating'>
                 <div class='head'>
                   <img src="goabroad.png" class='img-responsive' id='rating-img'>
@@ -172,8 +182,12 @@
       <div class='container-fluid' id='shadow-container'>
         <div class='jumbo-content'>
           <p>We want to ensure that all pre-health, pre-med, nursing, and other students in health related fields have the best hospital shadowing internship possible. If you have any questions, please contact us. Before applying be sure you have reviewed our website carefully to understand the scope of our programs, and looked over our our FAQ page.</p>
-          <div class='jumbo-cta'>
-            <button id='apply-sp'><strong>APPLY NOW TO OUR HOSPITAL SHADOWING PROGRAM</strong></button>
+          <div class='row'>
+            <div class='col-md-2'></div>
+            <div class='col-md-8'>
+              <button id='apply-sp'>APPLY NOW TO OUR HOSPITAL SHADOWING PROGRAM</button>
+            </div>
+            <div class='col-md-2'></div>
           </div>
         </div>
       </div>

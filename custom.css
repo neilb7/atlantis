@@ -15,10 +15,11 @@
 .nav-1-container {
   /*border: 1px solid black;*/
   position: relative;
-  top:-25px;
-  right:275px;
-  float: right;
+  /*top:-25px;
+  right:275px;*/
+  /*float: right;*/
   color: #404040;
+  /*margin-right: 25px;  */
 }
 
 .nav-1-container ul {
@@ -85,6 +86,10 @@
   text-align: left;
 }
 
+.p-box p {
+  margin-bottom: 0px;
+}
+
 #where {
   margin-top: 29px;
 }
@@ -133,26 +138,43 @@
 }
 
 .contact-box {
-  background-color: #fb8600;
   color: white;
   text-align: center;
   position: relative;
+  min-height: 350px;
 }
 
 .contact-box-content {
-   position: relative;
-   /*padding: 52px;*/
+  background-color: #fb8600;
+  position: relative;
  }  
 
+.contact-box-content > h5 {
+  padding: 40px 40px 20px 40px;
+}
+
  .apply-for {
-  background-color: #fb8600;
+  background-color: #f1730c;
  }
 
  .apply-for-content {
-  background-color:#f1730c ;
 /*  width:80%;
   height: 80%;*/
+  background-color: #fb8600;
+  position: relative;
+  
  }  
+
+.apply-for-wrapper {
+  width: 80%;
+  height: 80%;
+  background-color:#f1730c;
+  position: absolute;
+}
+
+.apply-wrapper > h4 {
+  margin-top: 0;
+}
 
 #sidebar {
   padding-right: 0;
@@ -234,18 +256,14 @@
 
 #apply-sp {
   border: none;
-  border-radius: 27px;
+  border-radius: 15px;
   background-color: #f8f7f3;
   color: black;
-  /*margin-left: 185px;
-  margin-top: 40px;*/
-  padding:20px;
- }
-
-.jumbo-cta {
-  position: relative;
-  top:40px;
-  left: 185px;
+  margin-top: 20px;
+  padding:5px 28px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #383737;
  }
 
 .etc {
